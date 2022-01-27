@@ -39,29 +39,11 @@ namespace RegistrationForm {
 		}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	private: System::Windows::Forms::TextBox^ textBox_name;
 	private: System::Windows::Forms::TextBox^ textBox_surname;
-
 	private: System::Windows::Forms::TextBox^ textBox_confirmPassword;
 	private: System::Windows::Forms::CheckBox^ checkBox_licenceAgreement;
 	private: System::Windows::Forms::Button^ button_registration;
-
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label3;
@@ -73,26 +55,8 @@ namespace RegistrationForm {
 	private: System::Windows::Forms::Label^ label8;
 	private: System::Windows::Forms::Label^ label9;
 	private: System::Windows::Forms::Label^ label10;
-
 	private: System::Windows::Forms::Label^ label_incorrectFields;
 	private: System::Windows::Forms::TextBox^ textBox_password;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	protected:
 
@@ -339,7 +303,6 @@ namespace RegistrationForm {
 			this->Name = L"RegistrationForm";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Форма регистрации";
-			this->Load += gcnew System::EventHandler(this, &RegistrationForm::RegistrationForm_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -364,11 +327,8 @@ namespace RegistrationForm {
 	private: System::Void checkBox_licenceAgreement_Click(System::Object^ sender, System::EventArgs^ e);
 	private: System::Void button_registration_Click(System::Object^ sender, System::EventArgs^ e);
 
-
-
 	private: System::Void drawBorders();
 
-private: System::Void RegistrationForm_Load(System::Object^ sender, System::EventArgs^ e) {
-}
+
 };
 }

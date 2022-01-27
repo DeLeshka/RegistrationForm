@@ -1,13 +1,5 @@
 #include "Tester.h"
 
-using namespace System;
-using namespace System::Windows::Forms;
-using namespace System::Drawing;
-
-
-#define	TEST_FIELD(field, function) 
-
-
 Tester* Tester::tester_ = nullptr;
 
 Tester* Tester::GetInstance()

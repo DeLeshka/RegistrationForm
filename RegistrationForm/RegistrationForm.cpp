@@ -1,5 +1,4 @@
 #include "RegistrationForm.h"
-#include <sstream>
 #include <msclr\marshal_cppstd.h>
 #include "Borders.h"
 #include "Tester.h"
