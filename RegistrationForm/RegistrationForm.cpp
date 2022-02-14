@@ -141,7 +141,6 @@ System::Void RegistrationForm::RegistrationForm::OnPaint(PaintEventArgs^ e)
 {
 	//there was a bug when first tab cauded paintEvent twice and cleanced all the borders, so this crutch fixes this
 	this->drawBorders();
-
 	return System::Void();
 }
 
@@ -161,9 +160,10 @@ System::Void RegistrationForm::RegistrationForm::button_registration_Click(Syste
 		MessageBox::Show("Для регистрации необходимо ознакомиться с лицензионным соглашением и принять его", "Внимание!");
 		return System::Void();
 	}
-	Tester* tester = Tester::GetInstance();
 
 	//recheck
+	Tester* tester = Tester::GetInstance();
+
 	this->textBox_email_LostFocus(sender, e);
 	this->textBox_name_LostFocus(sender, e);
 	this->textBox_surname_LostFocus(sender, e);
@@ -186,7 +186,6 @@ System::Void RegistrationForm::RegistrationForm::button_registration_Click(Syste
 	}
 	else
 	{
-
 		MessageBox::Show("Выполняется переход в личный кабинет", "Личный кабинет");
 	}
 
